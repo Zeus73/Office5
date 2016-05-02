@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="10dp"
+    android:padding="5dp"
+    android:minHeight="?attr/listPreferredItemHeight"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="Text"
+        android:gravity="center"
+        android:layout_weight="4"
+        android:textSize="23sp"
+        android:id="@+id/adminListItemUsername"
+        android:textStyle="bold|italic"
+        android:background="#6680cbc4" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="CurSal"
+        android:layout_weight="3"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:id="@+id/adminListItemSalary"
+        android:background="#6680cbc4" />
+
+
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:hint="New\nSalary"
+        android:id="@+id/adminListItemNewSalaryEditText"
+        android:layout_weight="4"
+        android:background="#6680cbc4" />
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="Save"
+        android:textSize="15sp"
+        android:id="@+id/adminListItemSaveNewSalaryButton"
+        android:background="#ffbb33"
+        android:textStyle="bold"
+        android:textColor="#cc0000"
+        android:layout_weight="2"/>
+
+</LinearLayout>

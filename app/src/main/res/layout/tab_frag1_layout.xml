@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Base.Theme.AppCompat.Light">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:text="Username:"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="27sp"
+            android:textStyle="bold|italic" />
+        <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:id="@+id/usernameEditText"
+        android:layout_weight="2" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:text="Password:"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="27sp"
+            android:textStyle="bold|italic" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:id="@+id/passwordEditText"
+            android:layout_weight="2" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="3">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Employee Login"
+            android:id="@+id/employeeLogin"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:textStyle="normal|bold"
+            android:textSize="@dimen/abc_text_size_display_1_material"
+            android:background="#000000"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin Login"
+            android:id="@+id/adminLogin"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:textStyle="normal|bold"
+            android:textSize="34sp"
+            android:background="#fef203" />
+
+<!--
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register new Employee"
+            android:id="@+id/newEmployeeRegisterButton"
+            android:layout_marginTop="60dp"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:background="#ffffff"
+            android:textColor="#009688" />
+            -->
+    </LinearLayout>
+
+</LinearLayout>
